@@ -64,8 +64,7 @@ body::before {
     margin-bottom: 2.5rem;
 }
 .title-section {
-        background-color: rgb(27, 27, 27);
-
+    background-color: rgb(27, 27, 27);
 }
 .section-title {
 
@@ -166,19 +165,19 @@ body::before {
     }
 
     .btn-left {
-      background: white;
-      color: black;
-      margin-right: 5px;
+         background: black;
+        color: white;
+        margin-left: 5px;  
     }
 
     .btn-right {
-      background: black;
-      color: white;
-      margin-left: 5px;
+         background: white;
+      color: black;
+      margin-right: 5px;
+   
     }
 @media (max-width: 768px) {
     .logos {
-        margin-bottom: 1.5rem;
         margin-right: 0;
         padding-right: 0;
     }
@@ -187,6 +186,6 @@ body::before {
         padding-right: 3rem;
     }
     .menu-section {
-        margin-bottom: 0rem;
+        margin-bottom: 10rem;
     }
 }
