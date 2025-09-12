@@ -22,7 +22,7 @@ body::before {
 }
 
 .menu-container {
-    max-width: 510px;
+    height: 100vh;
     margin: 0 auto;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -167,13 +167,13 @@ body::before {
     .btn-left {
          background: black;
         color: white;
-        margin-left: 5px;  
+        margin-right: 5px;  
     }
 
     .btn-right {
          background: white;
       color: black;
-      margin-right: 5px;
+      margin-left: 5px;
    
     }
 @media (max-width: 768px) {
