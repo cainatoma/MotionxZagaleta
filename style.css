@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-pt/FuturaCyrillicMedium.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Futura', sans-serif;
+    background: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* background layer */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('motion.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* push behind everything */
+}
+
+.menu-container {
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(1px);
+}
+
+.menu-content {
+    width: 100%;
+    color: black;
+}
+
+.menu-title {
+
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+}
+
+.menu-section {
+    margin-top: 20px;
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.0rem;
+}
+
+.menu-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 0.01rem 0;
+}
+
+.item-name {
+    font-size: 1rem;
+    color: black;
+}
+
+.item-price {
+    font-size: 1rem;
+    color: black;
+}
+
+.logos {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+
+.logo {
+    height: auto;
+    margin: 0;  /* kill any default margins */
+    padding: 0;
+}
+
+.motion-logo {
+    width: 90px;
+}
+
+.zagaleta-logo {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+       .logos {
+        margin-right: 0;   /* no spacing on right */
+        padding-right: 0;  /* no spacing on right */
+    }
+      .menu-container {
+        padding-left: 1rem;
+        padding-right: 0; /* remove right padding */
+    }
+    
+    .menu-section {
+        margin-bottom: 0rem;
+    }
+}
