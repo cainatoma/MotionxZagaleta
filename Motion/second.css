@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Times New Roman", Times, serif;
+    background: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* background layer */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Motion.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.menu-container {
+    height: 100vh;
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(1px);
+}
+
+.menu-content {
+    width: 100%;
+    color: black;
+}
+.up{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1rem;
+
+}
+.menu-title {
+
+        text-align: center;   /* centers the title */
+    display: block; 
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+/* .menu-title {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    text-align: center;   /* centers the title */
+
+
+.menu-section {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 2.5rem;
+}
+.title-section {
+    background-color: rgb(27, 27, 27);
+}
+.section-title {
+
+    font-weight: bolder;
+
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+/* left text */
+.item-name {
+    font-size: 1rem;
+    color: black;
+    white-space: nowrap;
+}
+
+/* dotted leader */
+.dots {
+    flex: 1;
+    border-bottom: 1px dotted black;
+    margin: 0 4px;
+    height: 0.6em;
+}
+
+/* right text */
+.item-price {
+    font-size: 1rem;
+    color: black;
+    white-space: nowrap;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.item-price::after {
+    content: "NGN";
+}
+
+.motion-logo {
+    width: 90px;
+}
+.upl {
+    height: 150px;
+    width: 150px;
+}
+.zagaleta-logo {
+    width: 150px;
+}
+  .fixed-buttons {
+        z-index: 999;
+      position: fixed;
+      top:90%;
+      left: 0px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    background-color: white;
+      
+      box-sizing: border-box;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 6px;
+      border: 2px solid black;
+    }
+
+    .btn-left {
+         background: black;
+        color: white;
+        margin-right: 5px;  
+    }
+
+    .btn-right {
+         background: white;
+      color: black;
+      margin-left: 5px;
+   
+    }
+@media (max-width: 768px) {
+    .logos {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .menu-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .menu-section {
+        margin-bottom: 10rem;
+    }
+}
